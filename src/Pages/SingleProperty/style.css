@@ -1,0 +1,35 @@
+
+.singleProperty:not(.propertiesList) .price-txt {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.singleProperty .propertiesList .price-txt {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.propertiesOnMap.sticky-top {
+    top: 145px;
+    z-index: 45;
+}
+
+/*.singleProperty .slick-prev {*/
+/*    left: 5px !important;*/
+/*}*/
+
+/*.singleProperty .slick-next {*/
+/*    right: 5px !important;*/
+/*}*/
+
+/*.singleProperty .slick-prev,*/
+/*.singleProperty .slick-next {*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*}*/
+
+/*.singleProperty .slick-prev:before,*/
+/*.singleProperty .slick-next:before {*/
+/*    font-size: 40px !important;*/
+/*    color: rgba(var(--black), 0.7);*/
+/*}*/

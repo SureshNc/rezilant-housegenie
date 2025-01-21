@@ -1,0 +1,68 @@
+.searchRoot .logo svg .text-logo {
+    fill: rgba(var(--white), 1);
+}
+
+.searchRoot .content-main {
+    padding: 0 !important;
+}
+
+.search-container {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 30px;
+    display: flex;
+    background: rgba(var(--black), 0.9) url("../../images/bg-search-home.svg") no-repeat center;
+    background-size: cover
+}
+
+.search-container figure {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.search-container figure img {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.searchFooter {
+    width: 100%;
+    position: fixed;
+    bottom: 25px;
+    left: 0;
+    color: rgba(var(--white), 1);
+}
+
+.searchBoxOver {
+    position: relative;
+}
+
+.searchBoxHolder {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBoxHolder .search-home {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.searchBox  .form-control {
+    height: 50px;
+}
+
+
+
+
+

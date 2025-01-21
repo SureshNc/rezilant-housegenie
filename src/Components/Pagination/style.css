@@ -1,0 +1,33 @@
+.pagination-cus {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.pagination-cus button {
+    height: 36px;
+    border: 1px solid rgba(var(--grey), 0.5);;
+    min-width: 36px;
+    line-height: 36px;
+    padding: 0 8px;
+    margin: 0 3px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.pagination-cus button.active {
+    background: rgba(var(--grey), 0.3);
+}
+
+.pagination-cus button svg {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: -2px;
+}
+
+.pagination-cus button:disabled {
+    opacity: 0.3;
+}

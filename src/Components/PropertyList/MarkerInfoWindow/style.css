@@ -1,0 +1,51 @@
+.info-window {
+    width: 420px;
+    padding: 0;
+}
+
+.hg-amin-card li {
+    display: flex;
+    align-items: center;
+    line-height: 1em;
+}
+
+.info-window img {
+    width: 100% !important;
+    height: 230px !important;
+    object-fit: cover;
+}
+
+.gm-style-iw-c {
+    padding: 0 !important;
+}
+
+.gm-style-iw-d {
+    overflow: auto !important;
+}
+
+button.gm-ui-hover-effect{
+    background-color: #f5f5f5 !important;
+    border-radius: 100% !important;
+    width: 28px !important;
+    height: 28px !important;
+    display: inline-block !important;
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    opacity: 1 !important;
+}
+
+button.gm-ui-hover-effect span {
+    width: 18px !important;
+    height: 18px !important;
+    margin: 1px 0 0 5px !important;
+}
+
+
+.info-window .slick-prev {
+    left: 20px !important;
+}
+
+.info-window .slick-next {
+    right: 20px !important;
+}

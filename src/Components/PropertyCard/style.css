@@ -1,0 +1,30 @@
+.hg-card img {
+    border-radius: 14px 14px 0 0;
+    height: 270px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.price-txt {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.link-property {
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(var(--primary-color), 1);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.link-property svg {
+    width: 26px;
+    height: 26px;
+    fill: rgba(var(--primary-color), 1);
+}
