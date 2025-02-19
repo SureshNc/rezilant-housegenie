@@ -1,5 +1,6 @@
+import React from 'react';
 import {Outlet} from "react-router-dom";
-import {Header} from "../../Components/Header/Header";
+import Header from '../../Components/Header/Header';
 import {Footer} from "../../Components/Footer/Footer";
 import {useLocation} from "react-router-dom";
 import {useState, useEffect} from "react";

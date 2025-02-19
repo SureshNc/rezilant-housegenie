@@ -1,7 +1,11 @@
 import './style.css'
-import {useEffect} from "react";
+import React, { useEffect, useState } from "react";
+import signInWithGoogle from '../../signInWithGoogle';
+import signOutUser from '../../signOut';
 
-export const Header = () => {
+const Header = () => {
+    const [user, setUser] = useState(null);
+
     useEffect(() => {
         window.addEventListener('scroll', isSticky);
         return () => {
@@ -14,6 +18,18 @@ export const Header = () => {
         const header = document.querySelector('.hg-header');
         const scrollTop = window.scrollY;
         scrollTop >= 80 ? header.classList.add('is-sticky') : header.classList.remove('is-sticky');
+    };
+
+    const handleSignIn = async () => {
+        const user = await signInWithGoogle();
+        if (user) {
+            setUser(user);
+        }
+    };
+
+    const handleSignOut = async () => {
+        await signOutUser();
+        setUser(null);
     };
 
     return (
@@ -32,10 +48,25 @@ export const Header = () => {
                     </div>
 
                     <div>
-                        <a href="/" className={'btn btn-primary'}>Join Us/Sign In</a>
+                         {user ? (
+                            <div className="user-info d-flex align-items-center">
+                                <div className="user-icon">
+                                    {user.displayName.charAt(0)}
+                                </div>
+                                <div className="user-details">
+                                    <span>{user.displayName}</span>
+                                    <span>{user.email}</span>
+                                </div>
+                                <button onClick={handleSignOut} className={'btn btn-secondary'}>Sign Out</button>
+                            </div>
+                        ) : (
+                            <button onClick={handleSignIn} className={'btn btn-primary'}>Sign In with Google</button>
+                        )}
                     </div>
                 </div>
             </header>
         </>
-    )
-}
+    );
+};
+
+export default Header;
