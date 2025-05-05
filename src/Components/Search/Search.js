@@ -135,7 +135,7 @@ const Search = ({ currentLocationFromIp = {} }) => {
 
     return (
         <div className={'searchBox'}>
-            <div className={'form-group position-relative'}>
+            <div className={'form-group position-relative mb-0'}>
                 <div className={'search-star'}>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path
